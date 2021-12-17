@@ -1,0 +1,6 @@
+Benchmarks	sim_insts	system.cpu.committedInsts	system.cpu.dcache.replacements	system.l2.overall_accesses::total	system.cpu.cpi
+specbzip	100000001	100000001			710569				712341					1.679650
+spechmmer	100000001	100000001			70850				75649					1.190231
+speclibm	100000000	100000000			1486955				1488538					3.493415
+specmcf		100000001	100000001			54452				724390					1.299095
+specsjeng	100000000	100000000			5262377				5264051					10.270554

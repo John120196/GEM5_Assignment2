@@ -1,0 +1,6 @@
+Benchmarks	sim_seconds	host_seconds	system.cpu.cpi	system.cpu.dcache.overall_miss_rate::total	system.cpu.icache.overall_miss_rate::total	system.l2.overall_miss_rate::total
+specbzip	0.083982	946.38		1.679650	0.014798					0.000077					0.282163
+spechmmer	0.059512	936.44		1.190231	0.001784					0.000218					0.080490
+speclibm	0.174671	1024.58		3.493415	0.060972					0.000094					0.999944
+specmcf		0.086162	882.41		1.291785	0.002108					0.023621					0.055046
+specsjeng	0.513528	1902.65		10.270554	0.121831					0.000020					0.999972
