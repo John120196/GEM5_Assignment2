@@ -34,6 +34,7 @@ Team 4 <br />
 Ύστερα από αρκετές δοκιμές στο benchmark speclibm με χρήση διαφορετικών configuration και σκοπό την βελτιστοποίηση του CPI μας είχαμε τα παρακάτω αποτελέσματα:
 
 ![2.2](https://github.com/John120196/GEM5_Assignment2/blob/main/trials.png)
+*Για κάθε configuration υπάρχει screenshot με τον κώδικα στο terminal, μέσα στον αντίστοιχο φάκελο του repository! 
 
 Συγκεκριμένα το CPI μεταβλήθηκε ως εξής: 
 
