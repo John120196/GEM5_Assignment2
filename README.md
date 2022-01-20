@@ -59,6 +59,13 @@ _*Όπου l1 & l2, η ποσότητα της l1 και l2 μνήμης cache �
 _*Όπου P -> Performance, με αυθαίρετη μονάδα απόδοσης και a = constant_
   
 
-
-
+Sources:<br />
+https://www.gem5.org/<br />
+https://www.cs.utexas.edu/users/mckinley/352/lectures/21.pdf<br />
+https://www.hardwaretimes.com/difference-between-l1-l2-and-l3-cache-how-does-cpu-cache-work/#:~:text=L2%20cache%20is%20much%20larger,the%20cores%20on%20a%20die.<br />
+https://www.extremetech.com/extreme/188776-how-l1-and-l2-cpu-caches-work-and-why-theyre-an-essential-part-of-modern-chips<br />
+https://www.makeuseof.com/tag/what-is-cpu-cache/<br />
+https://cpuninja.com/cpu-cache/<br />
+https://www.extremetech.com/extreme/188776-how-l1-and-l2-cpu-caches-work-and-why-theyre-an-essential-part-of-modern-chips#:~:text=An%20eight%2Dway%20associative%20cache,rate%20improves%20with%20set%20associativity.<br />
+http://csillustrated.berkeley.edu/PDFs/handouts/cache-3-associativity-handout.pdf<br />
 
