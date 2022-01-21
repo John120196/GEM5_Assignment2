@@ -48,16 +48,32 @@ _*Για κάθε configuration υπάρχει text file με τον κώδικ�
 Παρατηρώντας τα δεδομένα του δεύτερου ερωτήματος και με περαιτέρω αναζήτηση στο διαδίκτυο καταλήξαμε (έστω προσεγγιστικά) στην συνάρτηση κόστους:
 
 
-**C = A * (10 * l1 + l2)** <br />
+**C = A/2 * (10 * l1 + l2)** <br />
 _*Όπου C -> Cost με αυθαίρετη μονάδα κόστους και Α -> Associativity Level_ <br />
-_*Όπου l1 & l2, η ποσότητα της l1 και l2 μνήμης cache σε ΚΒ_
+_*Όπου l1 & l2, η ποσότητα της l1 και l2 μνήμης cache σε MΒ_
 
 
 Με συνάρτηση κόστους/απόδοσης:
 
-**P = a^C = a^(A * (10 * l1 + l2))**<br />
+**P = a^(C/4) = a^(A/2 * (10 * l1 + l2))**<br />
 _*Όπου P -> Performance, με αυθαίρετη μονάδα απόδοσης και a = constant_
   
+
+Έστω οτι έχουμε a ≈ 1.2 με price/performance sweet spot για Cost = C ≈ 3, δηλαδή το config μας θα φαίνεται ως ακολούθως:<br />
+Associativity = 2 <br />
+l1 = l1d + l1i = 128 + 64 = 192KB = 0.192MB <br />
+l2 = 1MB <br />
+Θα τρέξουμε συνεπώς τον κώδικα:
+
+
+**/build/ARM/gem5.opt -d spec_results/speclibm_opt configs/example/se.py --cpu-type=MinorCPU --caches --l2cache --l1d_size=128kB --l1i_size=64kB --l2_size=1MB --l1d_assoc=2 --l1i_assoc=2 --l2_assoc=2 --cacheline_size=128 --cpu-clock=1GHz -c spec_cpu2006/470.lbm/src/speclibm -o '20 spec_cpu2006/470.lbm/data/lbm.in 0 1 spec_cpu2006/470.lbm/data/100_100_130_cf_a.of' -I 100000000** 
+
+
+Τα αποτελέσματα για το μοντέλο αυτό είναι:<br />
+
+![optsts](https://github.com/John120196/GEM5_Assignment2/blob/main/opt.png)<br />
+_*Πήραμε ως δεδομένα τα: cacheline size = 128 και cpu clock = 1GHz_
+
 
 Sources:<br />
 https://www.gem5.org/<br />
